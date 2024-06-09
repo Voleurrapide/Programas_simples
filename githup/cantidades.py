@@ -1,13 +1,12 @@
-cantidad=int(input("La cantidades que tiene --> "))
-
-for i in range(cantidad-1):
-    cantidad=int(input("Cual es su cantidad numero",i+1))
+cantidades=int(input("¿Que cantidades de productos tiene en su almacén? --> "))
+for i in range(cantidades-1):
+    cantidad=int(input("¿Cual es la cantidad del producto número? ",i+1))
     if cantidad>0:
-        incero=incero+1
+        supcero=supcero+1
     elif cantidad==0:
         cero=cero+1
     elif cantidad<0:
-        supcero=supcero+1
-print("Sus cantidades superiores a 0 son de ",supcero)
-print("Sus cantidades iguales a 0 son de ",cero)
-print("Sus cantidades menores a 0 son de ",incero)
+        infcero=infcero+1
+print("Las cantidades superiores a 0 son de ",supcero)
+print("Las cantidades iguales a 0 son de ",cero)
+print("Las cantidades menores a 0 son de ",infcero)
